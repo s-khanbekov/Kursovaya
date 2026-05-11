@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>МедЦентр — Контакты</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <div class="logo">
+      <span class="logo__cross">✚</span>
+      <div>
+        <span class="logo__name">МедЦентр</span>
+        <span class="logo__sub">Городская клиническая больница</span>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="nav__link">Главная</a>
+      <a href="doctors.html" class="nav__link">Врачи</a>
+      <a href="services.html" class="nav__link">Услуги</a>
+      <a href="contacts.html" class="nav__link active">Контакты</a>
+    </nav>
+    <a href="contacts.html" class="btn btn--primary">Записаться</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1 class="page-hero__title">Контакты</h1>
+    <p class="page-hero__desc">Запишитесь на приём или задайте вопрос нашим специалистам</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contacts__layout">
+
+    <!-- FORM -->
+    <div class="contact-form-wrap">
+      <h2>Запись на приём</h2>
+      <div class="contact-form" id="appointmentForm">
+        <div class="form-group">
+          <label>Ваше имя *</label>
+          <input type="text" id="fname" placeholder="Иван Иванов" />
+        </div>
+        <div class="form-group">
+          <label>Телефон *</label>
+          <input type="tel" id="fphone" placeholder="+994 (___) ___-__-__" />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="femail" placeholder="example@gmail.com" />
+        </div>
+        <div class="form-group">
+          <label>Специализация врача *</label>
+          <select id="fspec">
+            <option value="">— Выберите —</option>
+            <option>Терапевт</option>
+            <option>Кардиолог</option>
+            <option>Невролог</option>
+            <option>Хирург</option>
+            <option>Офтальмолог</option>
+            <option>Стоматолог</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Удобная дата *</label>
+          <input type="date" id="fdate" />
+        </div>
+        <div class="form-group">
+          <label>Комментарий</label>
+          <textarea id="fcomment" placeholder="Опишите вашу проблему или пожелания..." rows="3"></textarea>
+        </div>
+        <button class="btn btn--primary btn--full" onclick="submitForm()">Записаться на приём</button>
+        <div id="formMsg" class="form-message" style="display:none;"></div>
+      </div>
+    </div>
+
+    <!-- CONTACTS INFO -->
+    <div class="contact-info">
+      <h2>Наши контакты</h2>
+
+      <div class="contact-item">
+        <div class="contact-item__icon">📍</div>
+        <div>
+          <strong>Адрес</strong>
+          <p>г. Баку, ул. Медицинская, 1</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-item__icon">📞</div>
+        <div>
+          <strong>Телефон регистратуры</strong>
+          <p>+994 (50) 123-45-67 (бесплатно)</p>
+          <p>+994 (12) 345-67-89</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-item__icon">🚑</div>
+        <div>
+          <strong>Скорая помощь</strong>
+          <p>103 (круглосуточно)</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-item__icon">✉️</div>
+        <div>
+          <strong>Email</strong>
+          <p>info@medcenter.kz</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-item__icon">🕐</div>
+        <div>
+          <strong>Режим работы</strong>
+          <p>Пн–Пт: 08:00 – 20:00</p>
+          <p>Сб–Вс: 09:00 – 16:00</p>
+          <p>Скорая: 24/7</p>
+        </div>
+      </div>
+
+      <!-- MAP placeholder -->
+      <div class="map-placeholder">
+        <div class="map-placeholder__inner">
+          🗺️
+          <p>Карта</p>
+          <small>г. Баку, ул. Медицинская, 1</small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="logo">
+      <span class="logo__cross">✚</span>
+      <div>
+        <span class="logo__name">МедЦентр</span>
+        <span class="logo__sub">Городская клиническая больница</span>
+      </div>
+    </div>
+    <div class="footer__links">
+      <a href="index.html">Главная</a>
+      <a href="doctors.html">Врачи</a>
+      <a href="services.html">Услуги</a>
+      <a href="contacts.html">Контакты</a>
+    </div>
+    <div class="footer__info">
+      <p>📞 +994 (50) 123-45-67</p>
+      <p>📍 г. Баку, ул. Медицинская, 1</p>
+    </div>
+  </div>
+  <div class="footer__copy">© 2026 МедЦентр. Все права защищены.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

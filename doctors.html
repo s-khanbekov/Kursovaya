@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>МедЦентр — Врачи</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <div class="logo">
+      <span class="logo__cross">✚</span>
+      <div>
+        <span class="logo__name">МедЦентр</span>
+        <span class="logo__sub">Городская клиническая больница</span>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="nav__link">Главная</a>
+      <a href="doctors.html" class="nav__link active">Врачи</a>
+      <a href="services.html" class="nav__link">Услуги</a>
+      <a href="contacts.html" class="nav__link">Контакты</a>
+    </nav>
+    <a href="contacts.html" class="btn btn--primary">Записаться</a>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <h1 class="page-hero__title">Наши врачи</h1>
+    <p class="page-hero__desc">Команда опытных специалистов, готовых помочь вам сохранить здоровье</p>
+  </div>
+</section>
+
+<!-- FILTER -->
+<section class="section">
+  <div class="container">
+    <div class="filter">
+      <button class="filter__btn active" data-filter="all">Все специалисты</button>
+      <button class="filter__btn" data-filter="therapist">Терапевты</button>
+      <button class="filter__btn" data-filter="surgeon">Хирурги</button>
+      <button class="filter__btn" data-filter="cardiologist">Кардиологи</button>
+      <button class="filter__btn" data-filter="neurologist">Неврологи</button>
+    </div>
+
+    <div class="doctors__grid">
+      <div class="doctor-card" data-cat="therapist">
+        <div class="doctor-card__avatar">👨‍⚕️</div>
+        <div class="doctor-card__info">
+          <h3>Алексей Петрович Сорокин</h3>
+          <span class="doctor-card__spec">Терапевт</span>
+          <p class="doctor-card__exp">Стаж: 18 лет</p>
+          <p class="doctor-card__cat">Высшая категория</p>
+          <a href="contacts.html" class="btn btn--small">Записаться</a>
+        </div>
+      </div>
+
+      <div class="doctor-card" data-cat="cardiologist">
+        <div class="doctor-card__avatar">👩‍⚕️</div>
+        <div class="doctor-card__info">
+          <h3>Марина Владимировна Козлова</h3>
+          <span class="doctor-card__spec">Кардиолог</span>
+          <p class="doctor-card__exp">Стаж: 22 года</p>
+          <p class="doctor-card__cat">Профессор, д.м.н.</p>
+          <a href="contacts.html" class="btn btn--small">Записаться</a>
+        </div>
+      </div>
+
+      <div class="doctor-card" data-cat="surgeon">
+        <div class="doctor-card__avatar">👨‍⚕️</div>
+        <div class="doctor-card__info">
+          <h3>Дмитрий Николаевич Волков</h3>
+          <span class="doctor-card__spec">Хирург</span>
+          <p class="doctor-card__exp">Стаж: 15 лет</p>
+          <p class="doctor-card__cat">Первая категория</p>
+          <a href="contacts.html" class="btn btn--small">Записаться</a>
+        </div>
+      </div>
+
+      <div class="doctor-card" data-cat="neurologist">
+        <div class="doctor-card__avatar">👩‍⚕️</div>
+        <div class="doctor-card__info">
+          <h3>Елена Сергеевна Новикова</h3>
+          <span class="doctor-card__spec">Невролог</span>
+          <p class="doctor-card__exp">Стаж: 12 лет</p>
+          <p class="doctor-card__cat">Высшая категория</p>
+          <a href="contacts.html" class="btn btn--small">Записаться</a>
+        </div>
+      </div>
+
+      <div class="doctor-card" data-cat="therapist">
+        <div class="doctor-card__avatar">👨‍⚕️</div>
+        <div class="doctor-card__info">
+          <h3>Игорь Александрович Мишин</h3>
+          <span class="doctor-card__spec">Терапевт</span>
+          <p class="doctor-card__exp">Стаж: 9 лет</p>
+          <p class="doctor-card__cat">Первая категория</p>
+          <a href="contacts.html" class="btn btn--small">Записаться</a>
+        </div>
+      </div>
+
+      <div class="doctor-card" data-cat="surgeon">
+        <div class="doctor-card__avatar">👩‍⚕️</div>
+        <div class="doctor-card__info">
+          <h3>Ольга Михайловна Зайцева</h3>
+          <span class="doctor-card__spec">Хирург</span>
+          <p class="doctor-card__exp">Стаж: 20 лет</p>
+          <p class="doctor-card__cat">Высшая категория, к.м.н.</p>
+          <a href="contacts.html" class="btn btn--small">Записаться</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="logo">
+      <span class="logo__cross">✚</span>
+      <div>
+        <span class="logo__name">МедЦентр</span>
+        <span class="logo__sub">Городская клиническая больница</span>
+      </div>
+    </div>
+    <div class="footer__links">
+      <a href="index.html">Главная</a>
+      <a href="doctors.html">Врачи</a>
+      <a href="services.html">Услуги</a>
+      <a href="contacts.html">Контакты</a>
+    </div>
+    <div class="footer__info">
+      <p>📞 +994 (50) 123-45-67</p>
+      <p>📍 г. Баку, ул. Медицинская, 1</p>
+    </div>
+  </div>
+  <div class="footer__copy">© 2026 МедЦентр. Все права защищены.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
